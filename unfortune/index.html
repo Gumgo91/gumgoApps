@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>언포춘 쿠키: 오늘의 불행의 한마디</title>
+
+    <style>
+      .intro {
+        text-align: center;
+      }
+      button {
+      font-size: 30px;
+      }
+      input {
+      font-size: 30px;
+      text-align: center;
+      }
+
+    </style>
+    <script data-ad-client="ca-pub-4571142021050993" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      function checkForm() {
+        var name = document.frm.name;
+        if(name.value == '')
+        {
+            window.alert("이름을 입력해주세요!");
+            return false;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <br>
+    <center><a href="index.html"><img src="img/logo.jpg" width=300px></a></center>
+    <h2 class='intro'><u>이름</u>을 입력해주세요</h3>
+      <form name="frm" action="result.php" method="POST" onsubmit="return checkForm();">
+        <center>
+        <input type="text" name = "name"><br><br>
+        <input type="submit" value="예측!"></center>
+    </form>
+    <center><h6>* 걱정마세요! 아무런 정보도 저장하지 않아요 *<br>admin@blcat.kr</h6></center>
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "87b752199cf210";
+    if(window.wcs) {
+    wcs_do();
+    }
+    </script>
+  </body>
+</html>

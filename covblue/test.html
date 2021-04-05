@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>깊어지는 코로나 우울감. 코로나블루 자가진단</title>
+
+    <style>
+      
+      .intro {
+        text-align: center;
+      }
+      .test {
+        text-align: left;
+        background-color: #eee;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        font-size:20px;
+      }
+      select {
+      font-size: 20px;
+      }
+      input {
+      font-size: 20px;
+      }
+    </style>
+    <script>
+      function checkForm() {
+        var height = document.frm.height;
+        // 키 체크
+        if(height.value == '' || height.value<100 || height.value>250)
+        {
+            window.alert("키가 정확하지 않은걸요!");
+            return false;
+        }
+        var weight = document.frm.weight;
+        // 몸무게 체크
+        if(weight.value == '' || weight.value<20 || weight.value>150)
+        {
+            window.alert("몸무게가 정확하지 않은걸요!");
+            return false;
+        }
+      }
+    </script>
+    <script data-ad-client="ca-pub-4571142021050993" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+
+  <body>
+    <center><img src="img/test_logo.png" width=300px></center>
+    <br>
+    <form name="frm" action="result.php" method="POST" onsubmit="return checkForm();">
+      <div class="test">
+        최근 <u>2주(14일)간</u> 증상이 있던 날을 체크해주세요
+      </div>
+      <div class="test">
+        Q1. 기분이 가라앉거나 우울하고, 희망이 없다고 느꼈다
+        <select name = "q1">
+          <option value = "0">없음</option>
+          <option value = "1">2~6일</option>
+          <option value = "2">7~12일</option>
+          <option value = "3">거의 매일</option> 
+         </select>
+      </div>
+      <div class="test">
+        Q2. 평소 하던 일에 흥미가 없어지거나 즐거움을 느끼지 못했다
+        <select name = "q2">
+          <option value = "0">없음</option>
+          <option value = "1">2~6일</option>
+          <option value = "2">7~12일</option>
+          <option value = "3">거의 매일</option> 
+         </select>
+      </div>
+      <div class="test">
+        Q3. 잠들기가 어렵거나 자주 깻다(혹은 너무 많이 잤다)
+        <select name = "q3">
+          <option value = "0">없음</option>
+          <option value = "1">2~6일</option>
+          <option value = "2">7~12일</option>
+          <option value = "3">거의 매일</option> 
+         </select>
+      </div>
+      <div class="test">
+        Q4. 평소보다 식욕이 줄었다.(혹은 평소보다 많이 먹었다)
+        <select name = "q4">
+          <option value = "0">없음</option>
+          <option value = "1">2~6일</option>
+          <option value = "2">7~12일</option>
+          <option value = "3">거의 매일</option> 
+         </select>
+      </div>
+      <div class="test">
+        Q5. 다른 사람들이 눈치 챌 정도로 평소보다 말과 행동이 느려졌다 (혹은 너무 안절부절못해서 가만히 앉아 있을 수 없었다.)
+        <select name = "q5">
+          <option value = "0">없음</option>
+          <option value = "1">2~6일</option>
+          <option value = "2">7~12일</option>
+          <option value = "3">거의 매일</option> 
+         </select>
+      </div>
+      <div class="test">
+        Q6. 피곤하고 기운이 없었다.
+        <select name = "q6">
+          <option value = "0">없음</option>
+          <option value = "1">2~6일</option>
+          <option value = "2">7~12일</option>
+          <option value = "3">거의 매일</option> 
+         </select>
+      </div>
+      <div class="test">
+        Q7. 내가 잘못했거나, 실패했다는 생각이 들었다 (혹은 자신과 가족을 실망시켰다고 생각했다)
+        <select name = "q7">
+          <option value = "0">없음</option>
+          <option value = "1">2~6일</option>
+          <option value = "2">7~12일</option>
+          <option value = "3">거의 매일</option> 
+         </select>
+      </div>
+      <div class="test">
+        Q8. 신문을 읽거나 TV를 보는 것과 같은 일상적인 일에 집중할 수가 없었다
+        <select name = "q8">
+          <option value = "0">없음</option>
+          <option value = "1">2~6일</option>
+          <option value = "2">7~12일</option>
+          <option value = "3">거의 매일</option> 
+         </select>
+      </div>
+      <div class="test">
+        Q9. 차라리 죽는 것이 더 낫겠다고 생각했다 (혹은 자해할 생각을 했다)
+        <select name = "q9">
+          <option value = "0">없음</option>
+          <option value = "1">2~6일</option>
+          <option value = "2">7~12일</option>
+          <option value = "3">거의 매일</option> 
+         </select>
+      </div>
+      <center><input type="submit" value="다 했어요!"></center>
+  </form>
+  <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+  <script type="text/javascript">
+  if(!wcs_add) var wcs_add = {};
+  wcs_add["wa"] = "87b752199cf210";
+  if(window.wcs) {
+  wcs_do();
+  }
+  </script>
+  </body>
+</html>
